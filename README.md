@@ -33,7 +33,24 @@ mvn clean install
 ```
 
 ### Run Tests
+
+
 ```
 mvn test
 ```
+
+For test purpose, can just use embedded-redis, instead of installing redis.
+
+```
+testCompile group: 'it.ozimov', name: 'embedded-redis', version: '0.7.2'
+
+<dependency>
+    <groupId>it.ozimov</groupId>
+    <artifactId>embedded-redis</artifactId>
+    <version>0.7.2</version>
+    <scope>test</scope>
+</dependency>
+
+```
+
 
